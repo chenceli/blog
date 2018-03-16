@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 591520 */
+    src: url('//at.alicdn.com/t/font_591520_hwwe2fgm1m6g8pvi.eot');
+    src: url('//at.alicdn.com/t/font_591520_hwwe2fgm1m6g8pvi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_591520_hwwe2fgm1m6g8pvi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_591520_hwwe2fgm1m6g8pvi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_591520_hwwe2fgm1m6g8pvi.svg#iconfont') format('svg');
+}
+
+i{
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    padding: 0.9rem 0 1rem;
+    /*background: #ebf0f2;*/
+}
+
+/*头部开始*/
+header{
+    width: 100%;
+    height: 0.9rem;
+    border-bottom: 0.01rem solid #aaaaaa;
+    box-sizing: border-box;
+    padding-left: 0.45rem;
+    position: fixed;
+    left: 0;
+    top:0;
+}
+header > a{
+    display: flex;
+    height: 100%;
+}
+header > a > h1{
+    font-size: 0.26rem;
+    color: #000;
+    line-height: 0.9rem;
+    display: inline;
+}
+/*头部结束*/
+
+/*写作开始*/
+form{
+    width: 100%;
+    border-bottom: 0.01rem solid #ddd;
+}
+.title{
+    width: 100%;
+    height: 0.8rem;
+    border-bottom: 0.01rem solid #dddddd;
+    position: relative;
+}
+.title > input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: absolute;
+    left: 0;
+    top:0;
+    outline: none;
+    padding-left: 0.2rem;
+    box-sizing: border-box;
+}
+.title > label{
+    font-size: 0.26rem;
+    color: #888888;
+    position: absolute;
+    left: 0.2rem;
+    top:50%;
+    margin-top: -0.2rem;
+}
+textarea{
+    width: 100%;
+    height: 4rem;
+    border: none;
+    padding: 0.27rem 0.21rem;
+    box-sizing: border-box;
+    font-size: 0.26rem;
+    color: #888888;
+    outline: none;
+    font-family: "微软雅黑", "宋体", sans-serif;
+    resize: none;
+}
+/*写作结束*/
+
+/*分享开始*/
+.share{
+    width: 100%;
+}
+.shareTitle{
+    width: 100%;
+    height: 0.7rem;
+    font-size: 0.29rem;
+    color: #999999;
+    line-height: 0.7rem;
+    padding-left: 0.27rem;
+    box-sizing: border-box;
+    background: #f8f8f8;
+}
+.shareList{
+    width: 100%;
+    height: 1.32rem;
+    border-top: 0.01rem solid #dddddd;
+    border-bottom: 0.01rem solid #dddddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shareList > li{
+    height: 100%;
+}
+.shareList > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    text-align: center;
+}
+.shareIcon{
+    font-family: iconfont;
+    font-size: 0.6rem;
+    color: #9a9a9a;
+}
+.shareList > li > a > span{
+    font-size: 0.22rem;
+    color: #9a9a9a;
+}
+/*分享结束*/
+
+/*底部开始*/
+footer{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+footer > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1rem;
+    background: #16a5af;
+    color: #ffffff;
+    font-size: 0.34rem;
+}
+/*底部结束*/
+

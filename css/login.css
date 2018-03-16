@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 591520 */
+    src: url('//at.alicdn.com/t/font_591520_w4zzq5igfototj4i.eot');
+    src: url('//at.alicdn.com/t/font_591520_w4zzq5igfototj4i.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_591520_w4zzq5igfototj4i.woff') format('woff'),
+    url('//at.alicdn.com/t/font_591520_w4zzq5igfototj4i.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_591520_w4zzq5igfototj4i.svg#iconfont') format('svg');
+}
+
+i{
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    /*padding: 0.9rem 0 1.12rem;*/
+    background: #1a1a1a;
+    padding: 1.53rem 0.56rem 0;
+}
+
+
+/*界面开始*/
+.interface{
+    width: 100%;
+    height: 6.83rem;
+    background: #fff;
+    border-radius: 0.1rem;
+    padding: 0.4rem 0.3rem;
+    box-sizing: border-box;
+}
+.close{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.closeIcon{
+    font-family: iconfont;
+    font-size: 0.4rem;
+    color: #666666;
+}
+h1{
+    font-size: 0.43rem;
+    color: #000;
+    text-align: center;
+}
+.loginBox{
+    position: relative;
+    width: 100%;
+    height: 1rem;
+}
+input{
+    width: 100%;
+    height: 0.72rem;
+    border: none;
+    border-bottom:0.02rem solid #16a5af;
+    outline: none;
+    padding-left: 0.72rem;
+    box-sizing: border-box;
+}
+.loginIcon{
+    font-family: iconfont;
+    font-size: 0.4rem;
+    color: #333333;
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+}
+label{
+    color: #b3b3b3;
+    font-size: 0.3rem;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.72rem;
+}
+.smallText{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.6rem;
+    overflow: hidden;
+}
+.smllTextleft,.smllTextRight{
+    font-size: 0.27rem;
+}
+.smllTextleft{
+    color: #16a5af;
+}
+.smllTextleft{
+    color: #16a5af;
+}
+.smllTextRight{
+    color: #b3b3b3;
+}
+button{
+    display: block;
+    width: 5.16rem;
+    height: 0.9rem;
+    background: #16a5af;
+    border: none;
+    border-radius: 1.2rem;
+    font-size: 0.3rem;
+    color: #fff;
+    margin: 0.42rem auto 0;
+}
+.interface p{
+    font-size: 0.23rem;
+    color: #666666;
+    margin-top: 0.4rem;
+    text-align: center;
+}
+.interface p a{
+    font-size: 0.23rem;
+    color: #16a5af;
+}
+/*界面结束*/
+
+/*登录方式开始*/
+.other{
+    width: 5.3rem;
+    margin: 0.55rem auto;
+}
+.title{
+    width: 100%;
+    position: relative;
+}
+.title span{
+    width: 1.16rem;
+    height: 0.01rem;
+    background: #5e5e5e;
+    position: absolute;
+    top:0.1rem;
+}
+.title span:first-child{
+    left: 0;
+}
+.title span:last-child{
+    right: 0;
+}
+.title p{
+    font-size: 0.23rem;
+    color: #f0f0f0;
+    position: absolute;
+    left: 1.3rem;
+    top: 0;
+}
+.iconBox{
+    width: 100%;
+    padding-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.iconBox > li > a{
+    display: block;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.iconBox > li > a > img{
+    width: 100%;
+}
+/*登录方式结束*/
+

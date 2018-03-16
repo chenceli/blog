@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 591520 */
+    src: url('//at.alicdn.com/t/font_591520_j6hvpwv1hoo2mx6r.eot');
+    src: url('//at.alicdn.com/t/font_591520_j6hvpwv1hoo2mx6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_591520_j6hvpwv1hoo2mx6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_591520_j6hvpwv1hoo2mx6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_591520_j6hvpwv1hoo2mx6r.svg#iconfont') format('svg');
+}
+
+i{
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+    padding: 0.9rem 0 1.12rem;
+    /*background: #ebf0f2;*/
+}
+
+/*头部开始*/
+header{
+    width: 100%;
+    height: 0.9rem;
+    background: #494B43;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+}
+.tabBox{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.tabBox > li{
+    font-size: 0.28rem;
+    color: #fff;
+    opacity: 0.7;
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 0.9rem;
+    padding: 0 0.28rem;
+}
+.tabBox > li:first-child{
+    opacity: 1;
+    border-bottom: 0.04rem solid #2fb9c3;
+    color: #2fb9c3;
+}
+/*头部结束*/
+
+/*列表开始*/
+.list{
+    width: 100%;
+}
+.listBox{
+    width: 100%;
+}
+.listBox > li{
+    background: #fff;
+    margin-bottom: 0.4rem;
+    padding: 0.24rem 0.28rem 0;
+    box-sizing: border-box;
+}
+.listBox > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.listBox > li > a > div.imgBox{
+    height: 3.7rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.listBox > li > a >div.imgBox >img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.shadowText{
+    width: 100%;
+    padding: 0.24rem 0.24rem;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.shadowText > p{
+    font-size: 0.27rem;
+    color: #fff;
+    z-index: 100;
+}
+.imgBox::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image:-webkit-linear-gradient(bottom, rgba(0,0,0,0.3) 0%,rgba(255,255,255,0) 50%);
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index: 1;
+}
+.listfooter{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+.listLeft{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.iconBox{
+    margin: 0 0.25rem;
+}
+.iconBox:first-child{
+    margin-left: 0;
+}
+.iconBox > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.listIcon{
+    font-family: iconfont;
+    font-size: 0.36rem;
+    color: #b2b2b2;
+}
+.listIconText{
+    font-size: 0.19rem;
+    color: #b2b2b2;
+    margin-left: 0.2rem;
+}
+.listText{
+    width: 100%;
+    padding: 0.24rem 0;
+}
+.listText > h1{
+    font-size: 0.36rem;
+    color: #000000;
+}
+.listText > p{
+    font-size: 0.24rem;
+    color: #666666;
+    margin-top: 0.05rem;
+}
+/*列表开始*/
+
+/*印象开始*/
+.photo{
+    width: 100%;
+}
+.photo > li{
+    width: 100%;
+    height: 6.7rem;
+    margin-bottom: 0.4rem;
+    position: relative;
+}
+.photo > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.photo > li > a > img{
+    display: block;
+    width: 100%;
+}
+.photo > li > div.photoFooter{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0.3rem;
+    bottom:0;
+}
+
+
+/*印象结束*/
+
+/*底部开始*/
+footer{
+    width: 100%;
+    height: 1.2rem;
+    background: #232427;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    z-index: 1000;
+}
+.footerList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerList > li{
+    height: 100%;
+}
+.footerList > li >a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    text-align: center;
+}
+.footerList > li > a > span{
+    font-size: 0.2rem;
+    color: #fff;
+}
+.footerIcon{
+    font-size: 0.34rem;
+    color: #fff;
+    font-family: iconfont;
+}
+.footerList > li > a.active span{
+    color: #16a5af;
+}
+.footerList > li > a.active .footerIcon{
+    color: #16a5af;
+}
+/*底部结束*/
+
